@@ -10,6 +10,10 @@
             "url": "https://packages.drupal.org/8"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/tavib47/drupal-pixel-standard"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "noli42/chosen",
@@ -54,7 +58,8 @@
         "drupal/smtp": "^1.4",
         "drush/drush": "^13.3",
         "eaudeweb/heavy-lifter": "^2",
-        "noli42/chosen": "^3.0"
+        "noli42/chosen": "^3.0",
+        "tavib47/drupal-pixel-standard": "dev-main"
     },
     "require-dev": {
         "brainmaestro/composer-git-hooks": "^3.0",
@@ -84,7 +89,8 @@
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "php-http/discovery": true,
-            "tbachert/spi": true
+            "tbachert/spi": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
