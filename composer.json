@@ -1,6 +1,6 @@
 {
     "name": "tavib47/drupal-boilerplate",
-    "description": "Project template for Drupal projects ",
+    "description": "Project template for Drupal projects",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/drupal",
@@ -83,7 +83,8 @@
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "tbachert/spi": true
         },
         "sort-packages": true
     },
