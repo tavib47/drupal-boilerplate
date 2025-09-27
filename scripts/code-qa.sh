@@ -1,8 +1,9 @@
 #!/bin/bash
 
-source scripts/utils.sh
 SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-cd "$SCRIPT_DIR"
+cd "$SCRIPT_DIR/.."
+
+source scripts/utils.sh
 
 preCommand=$([ "$DDEV" == "true" ] && echo "ddev exec" || echo "")
 status=0

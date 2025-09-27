@@ -31,7 +31,7 @@ function args()
     done
 }
 
-# Set DDEV to false by default
+# Set DDEV to true by default
 DDEV=true
 
 # Load .env file
