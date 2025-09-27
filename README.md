@@ -6,7 +6,7 @@ A comprehensive project template for Drupal 11 development with pre-configured m
 
 ### 1. Create new project from template
 ```bash
-composer create-project tavib47/drupal-boilerplate my-project-name --ignore-platform-reqs --no-interaction
+composer create-project tavib47/drupal-boilerplate:^11 my-project-name --ignore-platform-reqs --no-interaction
 cd my-project-name
 ```
 
