@@ -22,7 +22,7 @@ Edit the project name, description and other details in the following files:
 
 ### 3. Configure DDEV
 ```bash
-ddev config --project-name="My Project Name" --project-type=drupal11 --docroot=web
+ddev config --project-name=my-project-name --project-type=drupal11 --docroot=web
 ```
 
 ### 4. Install Drupal
