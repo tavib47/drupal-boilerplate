@@ -1,6 +1,6 @@
 {
     "name": "tavib47/drupal-boilerplate",
-    "description": "Project template for Drupal projects",
+    "description": "Project template for Drupal 11 projects",
     "type": "project",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.drupal.org/project/drupal",

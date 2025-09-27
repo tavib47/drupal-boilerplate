@@ -1,4 +1,4 @@
-name: drupal-boilerplate
+name: my-project-name
 type: drupal11
 docroot: ""
 php_version: "8.3"
