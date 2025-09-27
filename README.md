@@ -19,18 +19,23 @@ Edit the project name, description and other details in the following files:
 * drush/example.drush.yml
 * README.md (also delete the Drupal 11 Boilerplate title and Quick Start section)
 
-### 3. Install Drupal
+### 3. Configure DDEV
+```bash
+ddev config --project-name="My Project Name" --project-type=drupal11 --docroot=web
 ```
+
+### 4. Install Drupal
+```bash
 ddev start
 ddev drush site:install pixel_standard --site-name="My Project Name" --account-name=office@example.com --account-mail=office@example.com --site-mail=office@example.com --account-pass=password
 ```
 
-### 4. Export configuration
-```
+### 5. Export configuration
+```bash
 ddev drush cex -y
 ```
 
-### 5. Initialize git repository
+### 6. Initialize git repository
 ```bash
 git init
 git add .
@@ -46,7 +51,7 @@ git commit -m "Initial commit"
 
 If you get the `Could not connect to a docker provider. Please start or install a docker provider.` error you need to add your user to `docker` group:
 
-```
+```bash
 sudo usermod -aG docker $USER
 newgrp docker
 ```

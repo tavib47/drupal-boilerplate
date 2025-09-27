@@ -875,25 +875,80 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # $settings['migrate_file_public_path'] = '';
 # $settings['migrate_file_private_path'] = '';
 
+/**
+ * Exclude modules from configuration synchronization.
+ *
+ * On config export sync, no config or dependent config of any excluded module
+ * is exported. On config import sync, any config of any installed excluded
+ * module is ignored. In the exported configuration, it will be as if the
+ * excluded module had never been installed. When syncing configuration, if an
+ * excluded module is already installed, it will not be uninstalled by the
+ * configuration synchronization, and dependent configuration will remain
+ * intact. This affects only configuration synchronization; single import and
+ * export of configuration are not affected.
+ *
+ * Drupal does not validate or sanity check the list of excluded modules. For
+ * instance, it is your own responsibility to never exclude required modules,
+ * because it would mean that the exported configuration can not be imported
+ * anymore.
+ *
+ * This is an advanced feature and using it means opting out of some of the
+ * guarantees the configuration synchronization provides. It is not recommended
+ * to use this feature with modules that affect Drupal in a major way such as
+ * the language or field module.
+ */
+$settings['config_exclude_modules'] = [
+  'devel',
+  'devel_generate',
+  'stage_file_proxy',
+  'views_ui',
+  'webform_ui',
+  'purge_ui',
+  'help',
+  'config',
+  'field_ui',
+  'restui',
+  'dblog',
+];
+
 // Automatically generated include for settings managed by ddev.
-if (getenv('IS_DDEV_PROJECT') == 'true' && file_exists(__DIR__ . '/settings.ddev.php')) {
-  include __DIR__ . '/settings.ddev.php';
+$ddev_settings = __DIR__ . '/settings.ddev.php';
+$ddev_redis_settings = __DIR__ . '/settings.ddev.redis.php';
+$ddev_local_settings = __DIR__ . '/settings.ddev.local.php';
+if (getenv('IS_DDEV_PROJECT') == 'true') {
+  // Include auto-generated DDEV settings.
+  if (is_readable($ddev_settings)) {
+    require $ddev_settings;
+  }
+
+  // Include settings required for Redis cache.
+  if (is_readable($ddev_redis_settings)) {
+    require $ddev_redis_settings;
+  }
+
+  // Setup file directories.
+  $directories = [
+    'sites/default/private',
+    'sites/default/files',
+    'sites/default/files/tmp',
+    'sites/default/files/translations',
+  ];
+  foreach ($directories as $directory) {
+    $absolutePath = "{$app_root}/{$directory}";
+    if (!is_dir($absolutePath)) {
+      mkdir($absolutePath, 0755);
+    }
+  }
+  $settings['file_private_path'] = $app_root . '/sites/default/private';
+  $settings['file_public_path'] = 'sites/default/files';
+  $settings['file_temp_path'] = 'sites/default/files/tmp';
+
+  // Include custom DDEV settings.
+  if (is_readable($ddev_local_settings)) {
+    require $ddev_local_settings;
+  }
 }
 
-/**
- * Load local development override configuration, if available.
- *
- * Create a settings.local.php file to override variables on secondary (staging,
- * development, etc.) installations of this site.
- *
- * Typical uses of settings.local.php include:
- * - Disabling caching.
- * - Disabling JavaScript/CSS compression.
- * - Rerouting outgoing emails.
- *
- * Keep this code block at the end of this file to take full effect.
- */
-#
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
