@@ -54,6 +54,7 @@
         "drupal/pathauto": "^1.13",
         "drupal/rabbit_hole": "^1.0",
         "drupal/redirect": "^1.10",
+        "drupal/redis": "^1.10",
         "drupal/remove_username": "^1.5",
         "drupal/search_api": "^1.35",
         "drupal/symfony_mailer_lite": "^2.0",
