@@ -17,6 +17,7 @@ Edit the project name, description and other details in the following files:
 * example.robo.yml
 * .ddev/config.yaml
 * drush/example.drush.yml
+* sites/default/settings.ddev.local.php
 * README.md (also delete the Drupal 11 Boilerplate title and Quick Start section)
 
 ### 3. Configure DDEV
