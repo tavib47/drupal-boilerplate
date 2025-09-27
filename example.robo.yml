@@ -21,10 +21,10 @@ sites:
         admin_username: office@example.com
         config_split: FALSE
         modules:
-          - dblog
-          - config
-          - help
-          - views_ui
           - field_ui
-#          - webform_ui
-#          - stage_file_proxy
+          - views_ui
+          - webform_ui
+          - stage_file_proxy
+          - help
+          - webform_ui
+          - restui
