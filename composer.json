@@ -53,6 +53,7 @@
         "drupal/gin_toolbar": "^3.0",
         "drupal/google_tag": "^2.0",
         "drupal/honeypot": "^2.2",
+        "drupal/layout_builder_operation_link": "^2.2",
         "drupal/mail_login": "^4.0",
         "drupal/metatag": "^2.1",
         "drupal/monolog": "^3.0",
