@@ -9347,12 +9347,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tavib47/drupal-pixel-standard.git",
-                "reference": "a676b695aaffbde433fdd4425b3fe6aad021d7fd"
+                "reference": "20ea545da24795573e0133cc361a2121794bc326"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tavib47/drupal-pixel-standard/zipball/a676b695aaffbde433fdd4425b3fe6aad021d7fd",
-                "reference": "a676b695aaffbde433fdd4425b3fe6aad021d7fd",
+                "url": "https://api.github.com/repos/tavib47/drupal-pixel-standard/zipball/20ea545da24795573e0133cc361a2121794bc326",
+                "reference": "20ea545da24795573e0133cc361a2121794bc326",
                 "shasum": ""
             },
             "require": {
@@ -9369,10 +9369,10 @@
             "description": "Drupal installation profile with commonly used features pre-configured",
             "homepage": "https://github.com/tavib47/drupal-pixel-standard",
             "support": {
-                "source": "https://github.com/tavib47/drupal-pixel-standard/tree/1.2",
+                "source": "https://github.com/tavib47/drupal-pixel-standard/tree/1.5",
                 "issues": "https://github.com/tavib47/drupal-pixel-standard/issues"
             },
-            "time": "2025-09-27T17:45:30+00:00"
+            "time": "2025-09-28T09:13:29+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -16986,8 +16986,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/webform": 10,
-        "tavib47/drupal-pixel-standard": 20
+        "drupal/webform": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
