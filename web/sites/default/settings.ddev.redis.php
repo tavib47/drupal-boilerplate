@@ -2,7 +2,7 @@
 // #ddev-generated
 use Drupal\Core\Installer\InstallerKernel;
 
-if (!InstallerKernel::installationAttempted() && extension_loaded('redis') && class_exists('Drupal\redis\ClientFactory')) {
+if (extension_loaded('redis') && class_exists('Drupal\redis\ClientFactory')) {
   // Set Redis as the default backend for any cache bin not otherwise specified.
   $settings['cache']['default'] = 'cache.backend.redis';
   $settings['redis.connection']['host'] = 'redis';
