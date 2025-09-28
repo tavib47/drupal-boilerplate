@@ -16986,7 +16986,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/webform": 10
+        "drupal/webform": 10,
+        "tavib47/drupal-pixel-standard": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
