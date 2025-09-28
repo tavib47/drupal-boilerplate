@@ -37,6 +37,7 @@
         "drupal/captcha": "^2.0",
         "drupal/chosen": "^5",
         "drupal/ckeditor_accordion": "^2.3",
+        "drupal/ckeditor_iframe": "^3.1",
         "drupal/cookies": "^1.2",
         "drupal/core-composer-scaffold": "^11",
         "drupal/core-project-message": "^11",
