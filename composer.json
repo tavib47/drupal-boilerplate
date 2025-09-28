@@ -65,6 +65,7 @@
         "drupal/remove_username": "^1.5",
         "drupal/restui": "^1.22",
         "drupal/search_api": "^1.35",
+        "drupal/svg_image_field": "^2.3",
         "drupal/symfony_mailer_lite": "^2.0",
         "drupal/toolbar_language_switcher": "^2.0",
         "drupal/webform": "^6.3@beta",
