@@ -59,6 +59,7 @@
         "drupal/remove_username": "^1.5",
         "drupal/search_api": "^1.35",
         "drupal/symfony_mailer_lite": "^2.0",
+        "drupal/webform": "^6.3@beta",
         "drush/drush": "^13.3",
         "eaudeweb/heavy-lifter": "^2",
         "noli42/chosen": "^3.0",
