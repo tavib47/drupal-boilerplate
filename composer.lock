@@ -9686,12 +9686,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tavib47/drupal-pixel-standard.git",
-                "reference": "c66156c2c249a3d09d1237420ae1a1a0884865bd"
+                "reference": "88f51c60e4c6046e68554790e521bd80e2c960e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tavib47/drupal-pixel-standard/zipball/c66156c2c249a3d09d1237420ae1a1a0884865bd",
-                "reference": "c66156c2c249a3d09d1237420ae1a1a0884865bd",
+                "url": "https://api.github.com/repos/tavib47/drupal-pixel-standard/zipball/88f51c60e4c6046e68554790e521bd80e2c960e9",
+                "reference": "88f51c60e4c6046e68554790e521bd80e2c960e9",
                 "shasum": ""
             },
             "require": {
@@ -9708,10 +9708,10 @@
             "description": "Drupal installation profile with commonly used features pre-configured",
             "homepage": "https://github.com/tavib47/drupal-pixel-standard",
             "support": {
-                "source": "https://github.com/tavib47/drupal-pixel-standard/tree/1.6",
+                "source": "https://github.com/tavib47/drupal-pixel-standard/tree/1.7",
                 "issues": "https://github.com/tavib47/drupal-pixel-standard/issues"
             },
-            "time": "2025-09-29T12:07:02+00:00"
+            "time": "2025-09-29T12:18:05+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
