@@ -80,7 +80,7 @@ ddev drush site-install --existing-config --site-name="My Project Name" --accoun
 
 * Run `ddev start` to start the project without reinstalling the database
 * Run `ddev stop` to stop the project
-* Run `ddev launch` to launch the application in the browser or access https://cardionline.ddev.site:14443
+* Run `ddev launch` to launch the application in the browser or access https://my-project-name.ddev.site:14443
 * Running drush commands: `ddev drush command` (e.g. `ddev drush config:export`)
 * Running custom apps within vendor: `ddev exec ./vendor/bin/app command` (e.g. `ddev exec ./vendor/bin/robo site:update`)
 
@@ -111,7 +111,7 @@ DDEV provides a built-in command to simplify use of PHP’s dependency manager, 
 
 ### Email Capture and Review (MailHog)
 
-After your project is started, access the MailHog web interface at http://cardionline.ddev.site:18025, or run `ddev launch -m` to launch it in your default browser.
+After your project is started, access the MailHog web interface at http://my-project-name.ddev.site:18025, or run `ddev launch -m` to launch it in your default browser.
 
 ### Using Development Tools on the Host Machine
 
@@ -125,6 +125,6 @@ Tools that interact with files and require no database connection, such as Git o
 
 If you want to use Xdebug with a Drush command:
 
-* Create a server in PHPStorm (Project settings->Servers) and name it `cardionline.ro.ddev.site`
+* Create a server in PHPStorm (Project settings->Servers) and name it `my-project-name.ddev.site`
 * In the PHPStorm server configuration, map your host project directory to /var/www/html
 * Run the drush command inside the container (`ddev ssh`): `./vendor/bin/drush command`
